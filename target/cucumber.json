@@ -1,0 +1,143 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-04T11:36:40.892Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6021000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.immuta.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "As a user I should add ssn under local policies",
+        "description": "",
+        "id": "add-global-policy;as-a-user-i-should-add-ssn-under-local-policies",
+        "after": [
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.immuta.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2436000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on the landing page",
+            "match": {
+              "location": "com.immuta.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 444000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters username and password and clicks on the login button",
+            "match": {
+              "location": "com.immuta.step_definitions.LoginStepDefinitions.user_is_enter_user_name_and_password_and_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1809000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user click on the data source titled Data Source - Local Policies",
+            "match": {
+              "location": "com.immuta.step_definitions.LocalPoliciesPage.user_click_on_the_data_source_titled()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 594000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user navigates to the Data Dictionary tab",
+            "match": {
+              "location": "com.immuta.step_definitions.LocalPoliciesPage.userNavigatesToTheDataDictionaryTab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 404000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click the Add Tags button in the ssn column",
+            "match": {
+              "location": "com.immuta.step_definitions.LocalPoliciesPage.userClickTheAddTagsButtonInTheSsnColumn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 156000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user apply the Policy Tags.Data tag",
+            "match": {
+              "location": "com.immuta.step_definitions.LocalPoliciesPage.userApplyTheTag()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should see the tag Example Global Data Policy in data source",
+            "match": {
+              "location": "com.immuta.step_definitions.LocalPoliciesPage.userShouldSeeTheTagExampleGlobalDataPolicyInDataSource()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@policies"
+          }
+        ]
+      }
+    ],
+    "name": "Add global policy",
+    "description": "  Description: The purpose of this feature is to test adding  global policy to the data source",
+    "id": "add-global-policy",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LocalPolicies.feature",
+    "tags": [
+      {
+        "name": "@policies",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
